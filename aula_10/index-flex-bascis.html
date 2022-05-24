@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex básico</title>
+
+    <style>
+        #container {
+            display:flex;
+            background-color: darkred;
+            flex-wrap: wrap;
+            /* row não faz nada */ 
+            /* row-reverse inverte a ordem */
+            /* flex direction: colum */
+            /* wrap quebra/ configurar margin */
+
+            /*justify-content:flex-start;
+            justify-content: stretch;
+            justify-content: space-between;
+            justify-content: space-around;
+            justify-content: flex-end;*/
+            
+
+        }
+        #box1 {
+            flex:1;
+            width: 100px;
+            height: 50px;
+            background-color: rgb(231, 231, 231);
+            margin: 5px;
+            text-align: center;
+            margin: 5px;
+            
+            
+        }
+        #box2 {
+            flex:1;
+            width: 100px;
+            height: 50px;
+            background-color: rgb(133, 122, 122);
+            text-align: center;
+            margin: 5px;
+
+        }
+
+        #box3 {
+            flex:1;
+            width: 100px;
+            height: 50px;
+            background-color: rgb(241, 241, 241);
+            text-align: center;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div id="container">
+            <div id="box1">
+                <h1>loucura</h1>
+            </div>
+            <div id="box2">
+                <h1>doideira</h1>
+
+            </div> 
+            <div id="box3">
+                <h1>maluquices</h1>
+            </div>
+    </div>
+</body>
+</html>
